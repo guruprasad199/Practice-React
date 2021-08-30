@@ -12,21 +12,21 @@ export default function TodoFinal() {
   const handleclick = () => {
     axios
       .get(
-        `https://jsonplaceholder.typicode.com/todos?_start=${number}&_limit=5`
+        `https://jsonplaceholder.typicode.com/todos?_start=${number}&_limit=2`
       )
 
       .then((response) => setNewList([...newlist, ...response.data]))
 
       .catch((err) => console.log("Error"));
 
-    setNumber(number + 1);
+    setNumber(number + 2);
 
-    console.log(newlist);
+    // console.log(newlist);
   };
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/todos?_start=0&_limit=10")
+      .get("https://jsonplaceholder.typicode.com/todos")
 
       .then((response) => setList(response.data))
 
@@ -35,7 +35,7 @@ export default function TodoFinal() {
 
   return (
     <div className="App">
-      {list.map((item, ind) => (
+      {list.slice(1,10).map((item, ind) => (
         <li key={ind}>{item.title}</li>
       ))}
 

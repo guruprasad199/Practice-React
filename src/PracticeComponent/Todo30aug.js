@@ -16,6 +16,7 @@ export default function Todo30aug() {
                 <li key={id}>
 
                     {ind.title}
+                    <input type="checkbox" defaultChecked={ind.completed}/>
                 </li>
 
             ))}

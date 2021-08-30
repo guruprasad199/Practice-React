@@ -1,18 +1,14 @@
-// import Interview from './PracticeComponent/Interview'
+// import CreateForm from './PracticeComponent/CreateForm';
+// import Hemant_TodoFinal from './PracticeComponent/Hemant_TodoFinal'
 // import ShubhamDeqode from './PracticeComponent/ShubhamDeqode'
-// import Todo30aug from './PracticeComponent/Todo30aug';
-// import UserDetails from './PracticeComponent/UserDetails'
-// import TodoFromApi from './PracticeComponent/TodoFromApi'
-import TogglingTodo from './PracticeComponent/TogglingTodo'
-import DeqodePrepration from './PracticeComponent/DeqodePrepration'
+import Todo30aug from './PracticeComponent/Todo30aug'
 function App() {
   return (
     <div className="App">
-    <DeqodePrepration/>
-    <TogglingTodo/>
+    {/* <CreateForm/> */}
+    {/* <Hemant_TodoFinal/> */}
     {/* <ShubhamDeqode/> */}
-    {/* <Todo30aug/>
-    <UserDetails/> */}
+    <Todo30aug/>
     </div>
   );
 }
