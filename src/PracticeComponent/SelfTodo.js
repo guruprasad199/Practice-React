@@ -46,4 +46,3 @@ const Todolist = () => {
 };
 export default Todolist;
 
-// This is self todo app here
