@@ -50,3 +50,6 @@ const DeqodePrepration = () => {
   );
 };
 export default DeqodePrepration;
+
+
+// new
